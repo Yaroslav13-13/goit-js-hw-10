@@ -20,3 +20,33 @@ button[disabled] {
 #datetime-picker {
   margin-top: 40px;
 }
+
+.flatpickr-calendar {
+  font-family: 'Segoe UI', sans-serif;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+
+  border-radius: 8px;
+  padding: 16px;
+  width: 280px;
+  height: 352px;
+}
+
+/* Дата, наведення */
+.flatpickr-day:hover {
+  background: #00bcd4;
+  color: white;
+}
+
+/* Обрана дата */
+.flatpickr-day.selected,
+.flatpickr-day.startRange,
+.flatpickr-day.endRange {
+  background: #007aff;
+  color: white;
+}
+
+/* Поточний день */
+.flatpickr-day.today {
+  border: 1px solid #007aff;
+}
