@@ -17,10 +17,6 @@ button[disabled] {
   opacity: 0.5;
 }
 
-#datetime-picker {
-  margin-top: 40px;
-}
-
 .flatpickr-calendar {
   font-family: 'Segoe UI', sans-serif;
   border-radius: 12px;
@@ -47,14 +43,35 @@ button[disabled] {
   border: 1px solid #007aff;
 }
 
+.time-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding-top: 40px;
+}
+
 .input-time {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: row;
-  gap: 8px;
+  font-size: 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
   width: 272px;
   height: 40px;
+  padding: 0 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.input-time:focus {
+  outline: none;
+  border: 1px solid #4e75ff;
+  border-radius: 4px;
 }
 
 .btn-time {
@@ -62,4 +79,25 @@ button[disabled] {
   padding: 8px 16px;
   width: 75px;
   height: 40px;
+  background: #4e75ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.btn-time:disabled {
+  background-color: #cfcfcf;
+  cursor: not-allowed;
+}
+
+.btn-time:hover {
+  background: #6c8cff;
 }
