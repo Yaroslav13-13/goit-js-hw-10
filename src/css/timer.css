@@ -32,21 +32,34 @@ button[disabled] {
   height: 352px;
 }
 
-/* Дата, наведення */
 .flatpickr-day:hover {
   background: #00bcd4;
   color: white;
 }
 
-/* Обрана дата */
 .flatpickr-day.selected,
 .flatpickr-day.startRange,
 .flatpickr-day.endRange {
   background: #007aff;
   color: white;
 }
-
-/* Поточний день */
 .flatpickr-day.today {
   border: 1px solid #007aff;
+}
+
+.input-time {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 8px;
+  width: 272px;
+  height: 40px;
+}
+
+.btn-time {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 75px;
+  height: 40px;
 }
