@@ -14,7 +14,7 @@ function onFormSubmit(e) {
   createPromise(delay, state)
     .then(delay => {
       iziToast.success({
-        title: '✅ Fulfilled',
+        title: 'Fulfilled',
         message: `Fulfilled promise in ${delay}ms`,
         position: 'topRight',
         timeout: 3000,
@@ -22,7 +22,7 @@ function onFormSubmit(e) {
     })
     .catch(delay => {
       iziToast.error({
-        title: '❌ Rejected',
+        title: 'Rejected',
         message: `Rejected promise in ${delay}ms`,
         position: 'topRight',
         timeout: 3000,
