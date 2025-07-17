@@ -1,0 +1,22 @@
+.timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.field {
+  text-align: center;
+  font-family: Arial;
+}
+.value {
+  font-size: 36px;
+  display: block;
+}
+button[disabled] {
+  opacity: 0.5;
+}
+
+#datetime-picker {
+  margin-top: 40px;
+}
